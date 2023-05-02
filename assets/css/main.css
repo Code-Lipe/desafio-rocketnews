@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border-style: none;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --section-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "main-section image-section";
+    grid-template-columns: 50vw 1fr;
+}
+  
+.main-section {
+    grid-area: main-section;
+    background-color: var(--section-bg-color); 
+
+}
+
+.logo-img {
+    width: 350px;
+    margin: 5vh 0px 10vh 20px
+}
+
+.informations {
+    margin: 0px 20px;
+    color: var(--text-color);
+    line-height: 1.7em;
+    font-size: 0.9rem;
+}
+
+.informations h1 {
+    color: var(--title-color);
+    font-size: 1.5rem;
+}
+ 
+.image-section {
+    grid-area: image-section;
+    background-color: white;
+    background-image: url("/assets/images/read_news.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+form {
+    margin: 0px 20px;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    padding: 15px 0px;
+}
+
+.send-container {
+    display: flex;
+    margin: 15px 0px;
+    position: absolute;
+    background-color: aqua;
+    box-shadow: 12px 6px 6px rgba(0, 0, 0, 0.466);
+}
+
+.input-send {
+    padding: 18px 42vw 18px 10px;
+    border-left: solid 5px var(--title-color);
+}
+
+.send-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-button-color);
+    padding: 15px;
+    cursor: pointer;
+}
+
+.send-container button:hover {
+    background-color: var(--title-color);
+}
+
+.send-img {
+    filter: brightness(0) invert(1);
+}
+
+.lear {
+    margin: 15vh 20px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    color: var(--bg-button-color);
+    gap: 10px;
+}
+
+.arrow-right {
+    fill: var(--bg-button-color);
+}
